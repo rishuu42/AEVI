@@ -1,511 +1,1900 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiveAEVI - Premium Skincare Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">LiveAEVI</span>
-            </div>
-            <div class="nav-links">
-                <a href="#products" class="nav-link">Products</a>
-                <a href="#ingredients" class="nav-link">Ingredients</a>
-                <a href="#science" class="nav-link">Science</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <button class="btn-primary">Shop Now</button>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
-            <img src="https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Skincare Background" class="hero-bg-image">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-text">✨ Clinically Proven Results</span>
-                </div>
-                <h1 class="hero-title">
-                    Discover Your <span class="gradient-text">Radiant Skin</span>
-                </h1>
-                <p class="hero-description">
-                    Experience the power of advanced skincare science with our premium collection. 
-                    Formulated with cutting-edge ingredients for visible, lasting results.
+    <div class="preloader-wrapper">
+      <div class="preloader">
+      </div>
+    </div>
+
+    <div class="search-popup">
+      <div class="search-popup-container">
+
+        <form role="search" method="get" class="search-form" action="">
+          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
+          <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
+        </form>
+
+        <h5 class="cat-list-title">Browse Categories</h5>
+        
+        <ul class="cat-list">
+          <li class="cat-list-item">
+            <a href="shop.html" title="Men Jackets">Men Jackets</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Fashion">Fashion</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Casual Wears">Casual Wears</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Women">Women</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Trending">Trending</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Hoodie">Hoodie</a>
+          </li>
+          <li class="cat-list-item">
+            <a href="shop.html" title="Kids">Kids</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header id="header">
+      <div id="header-wrap">
+        <nav class="secondary-nav border-bottom">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-4 header-contact">
+                <p>Let's talk! <strong>+57 444 11 00 35</strong>
                 </p>
-                <div class="hero-buttons">
-                    <button class="btn-primary-large">Explore Collection</button>
-                    <button class="btn-secondary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <polygon points="5,3 19,12 5,21" fill="currentColor"/>
-                        </svg>
-                        Watch Story
+              </div>
+              <div class="col-md-4 shipping-purchase text-center">
+                <p>Free shipping on a purchase value of $200</p>
+              </div>
+              <div class="col-md-4 col-sm-12 user-items">
+                <ul class="d-flex justify-content-end list-unstyled">
+                  <li>
+                    <a href="login.html">
+                      <i class="icon icon-user"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="cart.html">
+                      <i class="icon icon-shopping-cart"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="wishlist.html">
+                      <i class="icon icon-heart"></i>
+                    </a>
+                  </li>
+                  <li class="user-items search-item pe-3">
+                    <a href="#" class="search-button">
+                      <i class="icon icon-search"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="primary-nav padding-small">
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-2 col-md-2">
+                <div class="main-logo">
+                  <a href="index.html">
+                    <img src="images/main-logo.png" alt="logo">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-10 col-md-10">
+                <div class="navbar">
+
+                  <div id="main-nav" class="stellarnav d-flex justify-content-end right">
+                    <ul class="menu-list">
+
+                      <li class="menu-item has-sub">
+                        <a href="index.html" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="index.html" class="item-anchor active">Home</a></li>
+                          <li><a href="home2.html" class="item-anchor">Home v2<span class="text-primary"> (PRO)</span></a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="about.html" class="item-anchor" data-effect="About">About</a></li>
+
+                      <li class="menu-item has-sub">
+                        <a href="shop.html" class="item-anchor d-flex align-item-center" data-effect="Shop">Shop<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="shop.html" class="item-anchor">Shop</a></li>
+                          <li><a href="shop-slider.html" class="item-anchor">Shop slider<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="shop-grid.html" class="item-anchor">Shop grid<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="shop-list.html" class="item-anchor">Shop list<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="single-product.html" class="item-anchor">Single product<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="cart.html" class="item-anchor">Cart<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="wishlist.html" class="item-anchor">Wishlist<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="checkout.html" class="item-anchor">Checkout<span class="text-primary"> (PRO)</span></a></li>
+                        </ul>
+                      </li>
+
+                      <li class="menu-item has-sub">
+                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Pages<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="coming-soon.html" class="item-anchor">Coming soon<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="login.html" class="item-anchor">Login<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="faqs.html" class="item-anchor">FAQs<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="styles.html" class="item-anchor">Styles</a></li>
+                          <li><a href="thank-you.html" class="item-anchor">Thankyou</a></li>
+                          <li><a href="error.html" class="item-anchor">Error page<span class="text-primary"> (PRO)</span></a></li>
+                        </ul>
+                      </li>
+
+                      <li class="menu-item has-sub">
+                        <a href="blog.html" class="item-anchor d-flex align-item-center" data-effect="Blog">Blog<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="blog.html" class="item-anchor">Blog</a></li>
+                          <li><a href="blog-sidebar.html" class="item-anchor">Blog with sidebar<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="blog-masonry.html" class="item-anchor">Blog masonry<span class="text-primary"> (PRO)</span></a></li>
+                          <li><a href="single-post.html" class="item-anchor">Single post</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="contact.html" class="item-anchor" data-effect="Contact">Contact</a></li>
+
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="billboard" class="overflow-hidden">
+
+      <button class="button-prev">
+        <i class="icon icon-chevron-left"></i>
+      </button>
+      <button class="button-next">
+        <i class="icon icon-chevron-right"></i>
+      </button>
+      <div class="swiper main-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('images/banner1.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
+            <div class="banner-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2 class="banner-title">Summer Collection</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
+                    <div class="btn-wrap">
+                      <a href="shop.html" class="btn btn-light btn-medium d-flex align-items-center" tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('images/banner2.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
+            <div class="banner-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2 class="banner-title">Casual Collection</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
+                    <div class="btn-wrap">
+                      <a href="shop.html" class="btn btn-light btn-light-arrow btn-medium d-flex align-items-center" tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-products" class="product-store padding-large">
+      <div class="container">
+        <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
+          <h2 class="section-title">Featured Products</h2>            
+          <div class="btn-wrap">
+            <a href="shop.html" class="d-flex align-items-center">View all products <i class="icon icon icon-arrow-io"></i></a>
+          </div>            
+        </div>
+        <div class="swiper product-swiper overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder">
+                  <img src="images/product-item1.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
                     </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">98%</div>
-                        <div class="stat-label">Customer Satisfaction</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">50K+</div>
-                        <div class="stat-label">Happy Customers</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Years of Research</div>
-                    </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Full sleeve cover shirt</a>
+                  </h3>
+                  <span class="item-price text-primary">$40.00</span>
                 </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder">
+                  <img src="images/product-item2.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Volunteer Half blue</a>
+                  </h3>
+                  <span class="item-price text-primary">$38.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder">
+                  <img src="images/product-item3.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Double yellow shirt</a>
+                  </h3>
+                  <span class="item-price text-primary">$44.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <div class="image-holder">
+                  <img src="images/product-item4.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Long belly grey pant</a>
+                  </h3>
+                  <span class="item-price text-primary">$33.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
-    <!-- Featured Products Section -->
-    <section id="products" class="products">
-        <div class="container">
+    <section id="latest-collection">
+      <div class="container">
+        <div class="product-collection row">
+          <div class="col-lg-7 col-md-12 left-content">
+            <div class="collection-item">
+              <div class="products-thumb">
+                <img src="images/collection-item1.jpg" alt="collection item" class="large-image image-rounded">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 product-entry">
+                <div class="categories">casual collection</div>
+                <h3 class="item-title">street wear.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum.</p>
+                <div class="btn-wrap">
+                  <a href="shop.html" class="d-flex align-items-center">shop collection <i class="icon icon-arrow-io"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 right-content flex-wrap">
+            <div class="collection-item top-item">
+              <div class="products-thumb">
+                <img src="images/collection-item2.jpg" alt="collection item" class="small-image image-rounded">
+              </div>
+              <div class="col-md-6 product-entry">
+                <div class="categories">Basic Collection</div>
+                <h3 class="item-title">Basic shoes.</h3>
+                <div class="btn-wrap">
+                  <a href="shop.html" class="d-flex align-items-center">shop collection <i class="icon icon-arrow-io"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="collection-item bottom-item">
+              <div class="products-thumb">
+                <img src="images/collection-item3.jpg" alt="collection item" class="small-image image-rounded">
+              </div>
+              <div class="col-md-6 product-entry">
+                <div class="categories">Best Selling Product</div>
+                <h3 class="item-title">woolen hat.</h3>
+                <div class="btn-wrap">
+                  <a href="shop.html" class="d-flex align-items-center">shop collection <i class="icon icon-arrow-io"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subscribe" class="padding-large">
+      <div class="container">
+        <div class="row">
+          <div class="block-text col-md-6">
             <div class="section-header">
-                <h2 class="section-title">Featured Products</h2>
-                <p class="section-description">
-                    Discover our bestselling skincare essentials, carefully crafted with premium ingredients for exceptional results.
-                </p>
+              <h2 class="section-title">Get 25% off Discount Coupons</h2>
             </div>
-            <div class="products-grid">
-                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="product-image">
-                        <img src="https://images.pexels.com/photos/3685530/pexels-photo-3685530.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="Vitamin C Serum">
-                        <div class="product-badge">Bestseller</div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Vitamin C Brightening Serum</h3>
-                        <p class="product-description">Advanced vitamin C formula that brightens and evens skin tone while providing antioxidant protection.</p>
-                        <div class="product-price">
-                            <span class="price-current">$89</span>
-                            <span class="price-original">$120</span>
-                        </div>
-                        <button class="btn-product">Add to Cart</button>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="product-image">
-                        <img src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="Retinol Night Cream">
-                        <div class="product-badge new">New</div>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Retinol Renewal Night Cream</h3>
-                        <p class="product-description">Gentle yet effective retinol cream that reduces fine lines and improves skin texture overnight.</p>
-                        <div class="product-price">
-                            <span class="price-current">$125</span>
-                        </div>
-                        <button class="btn-product">Add to Cart</button>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="product-image">
-                        <img src="https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="Hyaluronic Acid Moisturizer">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-title">Hyaluronic Hydra Moisturizer</h3>
-                        <p class="product-description">Ultra-hydrating moisturizer with multiple types of hyaluronic acid for plump, dewy skin.</p>
-                        <div class="product-price">
-                            <span class="price-current">$75</span>
-                        </div>
-                        <button class="btn-product">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst amet, metus, sit massa posuere maecenas. At tellus ut nunc amet vel egestas.</p>
+          </div>
+          <div class="subscribe-content col-md-6">
+            <form id="form" class="d-flex justify-content-between">
+              <input type="text" name="email" placeholder="Enter your email addresss here">
+              <button class="btn btn-dark">Subscribe Now</button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Ingredients Section -->
-    <section id="ingredients" class="ingredients">
-        <div class="container">
-            <div class="ingredients-content">
-                <div class="ingredients-text" data-aos="fade-right">
-                    <h2 class="section-title">Premium Ingredients</h2>
-                    <p class="ingredients-description">
-                        We source only the finest, scientifically-proven ingredients from around the world. 
-                        Each formula is carefully crafted to deliver maximum efficacy and safety.
-                    </p>
-                    <div class="ingredients-list">
-                        <div class="ingredient-item">
-                            <div class="ingredient-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <div class="ingredient-info">
-                                <h4>Vitamin C</h4>
-                                <p>Powerful antioxidant that brightens and protects</p>
-                            </div>
-                        </div>
-                        <div class="ingredient-item">
-                            <div class="ingredient-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <div class="ingredient-info">
-                                <h4>Retinol</h4>
-                                <p>Clinically proven to reduce signs of aging</p>
-                            </div>
-                        </div>
-                        <div class="ingredient-item">
-                            <div class="ingredient-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <div class="ingredient-info">
-                                <h4>Hyaluronic Acid</h4>
-                                <p>Intense hydration for plump, youthful skin</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ingredients-image" data-aos="fade-left">
-                    <img src="https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Premium Ingredients" class="ingredients-img">
-                </div>
-            </div>
+    <section id="selling-products" class="product-store bg-light-grey padding-large">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Best selling products</h2>
         </div>
+        <ul class="tabs list-unstyled">
+          <li data-tab-target="#all" class="active tab">All</li>
+          <li data-tab-target="#shoes" class="tab">Shoes</li>
+          <li data-tab-target="#tshirts" class="tab">Tshirts</li>
+          <li data-tab-target="#pants" class="tab">Pants</li>
+          <li data-tab-target="#hoodie" class="tab">Hoodie</li>
+          <li data-tab-target="#outer" class="tab">Outer</li>
+          <li data-tab-target="#jackets" class="tab">Jackets</li>
+          <li data-tab-target="#accessories" class="tab">Accessories</li>
+        </ul>
+        <div class="tab-content">
+          <div id="all" data-tab-content class="active">
+            <div class="row d-flex flex-wrap">
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products1.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Half sleeve T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products2.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Stylish Grey T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$35.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products3.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Silk White Shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$35.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products4.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Grunge Hoodie</a>
+                  </h3>
+                  <div class="item-price text-primary">$30.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products5.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Full sleeve Jeans jacket</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products6.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Grey Check Coat</a>
+                  </h3>
+                  <div class="item-price text-primary">$30.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products7.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Long Sleeve T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products8.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Half Sleeve T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$35.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products13.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Orange white Nike</a>
+                  </h3>
+                  <div class="item-price text-primary">$55.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products14.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Running Shoe</a>
+                  </h3>
+                  <div class="item-price text-primary">$65.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products15.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Tennis Shoe</a>
+                  </h3>
+                  <div class="item-price text-primary">$80.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products16.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Nike Brand Shoe</a>
+                  </h3>
+                  <div class="item-price text-primary">$65.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="shoes" data-tab-content>
+            <div class="row d-flex flex-wrap">
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products13.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Orange white Nike</a>
+                  </h3>
+                  <div class="item-price text-primary">$55.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products14.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Running Shoe</a>
+                  </h3>
+                  <div class="item-price text-primary">$65.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products15.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Tennis Shoe</a>
+                  </h3>
+                  <div class="item-price text-primary">$80.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products16.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Nike Brand Shoe</a>
+                  </h3>
+                  <div class="item-price text-primary">$65.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tshirts" data-tab-content>
+            <div class="row d-flex flex-wrap">
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products3.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Silk White Shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$35.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products8.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">White Half T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$30.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products5.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Ghee Half T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products7.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Long Sleeve T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="pants" data-tab-content>
+            <div class="row d-flex flex-wrap">
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products1.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Half sleeve T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products4.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Grunge Hoodie</a>
+                  </h3>
+                  <div class="item-price text-primary">$30.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products7.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Long Sleeve T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products2.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Stylish Grey Pant</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="hoodie" data-tab-content>
+            <div class="row d-flex flex-wrap">
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products17.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">White Hoodie</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products4.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Navy Blue Hoodie</a>
+                  </h3>
+                  <div class="item-price text-primary">$45.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products18.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Dark Green Hoodie</a>
+                  </h3>
+                  <div class="item-price text-primary">$35.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="outer" data-tab-content>
+            <div class="row d-flex flex-wrap">
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products3.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Silk White Shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$ 35.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products4.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Grunge Hoodie</a>
+                  </h3>
+                  <div class="item-price text-primary">$ 30.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products6.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Grey Check Coat</a>
+                  </h3>
+                  <div class="item-price text-primary">$ 30.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products7.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Long Sleeve T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">$ 40.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="jackets" data-tab-content>
+            <div class="row d-flex flex-wrap">
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products5.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Full Sleeve Jeans Jacket</a>
+                  </h3>
+                  <div class="item-price text-primary">$40.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products2.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Stylish Grey Coat</a>
+                  </h3>
+                  <div class="item-price text-primary">$35.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products6.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Grey Check Coat</a>
+                  </h3>
+                  <div class="item-price text-primary">$35.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="accessories" data-tab-content>
+            <div class="row d-flex flex-wrap">
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products19.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Stylish Women Bag</a>
+                  </h3>
+                  <div class="item-price text-primary">$35.00</div>
+                </div>
+              </div>
+              <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                  <img src="images/selling-products20.jpg" alt="Books" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Stylish Gadgets</a>
+                  </h3>
+                  <div class="item-price text-primary">$30.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Science Section -->
-    <section id="science" class="science">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Backed by Science</h2>
-                <p class="section-description">
-                    Our formulations are developed through rigorous research and clinical testing to ensure safety and efficacy.
-                </p>
+    <section id="testimonials" class="padding-large no-padding-bottom">
+      <div class="container">
+        <div class="reviews-content">
+          <div class="row d-flex flex-wrap">
+            <div class="col-md-2">
+              <div class="review-icon">
+                <i class="icon icon-right-quote"></i>
+              </div>
             </div>
-            <div class="science-grid">
-                <div class="science-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="science-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 11H15L17 21H7L9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 11V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 7C13.1046 7 14 6.10457 14 5C14 3.89543 13.1046 3 12 3C10.8954 3 10 3.89543 10 5C10 6.10457 10.8954 7 12 7Z" stroke="currentColor" stroke-width="2"/>
-                        </svg>
+            <div class="col-md-8">
+              <div class="swiper testimonial-swiper overflow-hidden">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-detail">
+                      <p>“Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.”</p>
+                      <div class="author-detail">
+                        <div class="name">By Maggie Rio</div>
+                      </div>
                     </div>
-                    <h3 class="science-title">Clinical Testing</h3>
-                    <p class="science-description">
-                        Every product undergoes extensive clinical trials to prove effectiveness and safety before launch.
-                    </p>
-                </div>
-                
-                <div class="science-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="science-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-detail">
+                      <p>“Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.”</p>
+                      <div class="author-detail">
+                        <div class="name">By John Smith</div>
+                      </div>
                     </div>
-                    <h3 class="science-title">Advanced Research</h3>
-                    <p class="science-description">
-                        Our team of dermatologists and chemists work continuously to develop breakthrough formulations.
-                    </p>
+                  </div>
                 </div>
-                
-                <div class="science-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="science-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 22S2 16 2 10C2 6 5 4 12 4S22 6 22 10C22 16 12 22 12 22Z" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3 class="science-title">Quality Assurance</h3>
-                    <p class="science-description">
-                        Manufactured in FDA-approved facilities with the highest quality standards and safety protocols.
-                    </p>
-                </div>
+              </div>
+              <div class="swiper-arrows">
+                <button class="prev-button">
+                  <i class="icon icon-arrow-left"></i>
+                </button>
+                <button class="next-button">
+                  <i class="icon icon-arrow-right"></i>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What Our Customers Say</h2>
-                <p class="section-description">
-                    Real results from real people who have transformed their skin with LiveAEVI.
-                </p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-rating">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">
-                            "The Vitamin C serum has completely transformed my skin. I've never had such a radiant, even complexion!"
-                        </p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sarah M." class="author-avatar">
-                        <div class="author-info">
-                            <div class="author-name">Sarah M.</div>
-                            <div class="author-location">New York, NY</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-rating">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">
-                            "After using the retinol cream for 3 months, my fine lines have visibly reduced. Amazing results!"
-                        </p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Jennifer L." class="author-avatar">
-                        <div class="author-info">
-                            <div class="author-name">Jennifer L.</div>
-                            <div class="author-location">Los Angeles, CA</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="testimonial-rating">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">
-                            "The hyaluronic moisturizer keeps my skin hydrated all day. Perfect for my sensitive skin!"
-                        </p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Maria R." class="author-avatar">
-                        <div class="author-info">
-                            <div class="author-name">Maria R.</div>
-                            <div class="author-location">Miami, FL</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="flash-sales" class="product-store padding-large">
+      
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Flash sales</h2>
         </div>
+        <div class="swiper product-swiper flash-sales overflow-hidden">
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-item">
+                <img src="images/selling-products9.jpg" alt="Books" class="product-image">
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="discount">10% Off</div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Full sleeve cover shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">
+                    <del class="prev-price">$50.00</del>$40.00
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <img src="images/selling-products10.jpg" alt="Books" class="product-image">
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="discount">10% Off</div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Long Sleeve T-shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">
+                    <del class="prev-price">$50.00</del>$40.00
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <img src="images/selling-products11.jpg" alt="Books" class="product-image">
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="discount">10% Off</div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Grey Check Coat</a>
+                  </h3>
+                  <div class="item-price text-primary">
+                    <del class="prev-price">$55.00</del>$45.00
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <img src="images/selling-products12.jpg" alt="Books" class="product-image">
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="discount">10% Off</div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Silk White Shirt</a>
+                  </h3>
+                  <div class="item-price text-primary">
+                    <del class="prev-price">$45.00</del>$35.00
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-item">
+                <img src="images/selling-products8.jpg" alt="Books" class="product-image">
+                <div class="cart-concern">
+                  <div class="cart-button d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    </button>
+                    <button type="button" class="view-btn tooltip
+                        d-flex">
+                      <i class="icon icon-screen-full"></i>
+                      <span class="tooltip-text">Quick view</span>
+                    </button>
+                    <button type="button" class="wishlist-btn">
+                      <i class="icon icon-heart"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="discount">10% Off</div>
+                <div class="product-detail">
+                  <h3 class="product-title">
+                    <a href="single-product.html">Blue Jeans pant</a>
+                  </h3>
+                  <div class="item-price text-primary">
+                    <del class="prev-price">$45.00</del>$35.00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <h2 class="section-title">About LiveAEVI</h2>
-                    <p class="about-description">
-                        Founded by leading dermatologists and skincare experts, LiveAEVI is dedicated to creating 
-                        premium skincare solutions that deliver visible, lasting results.
-                    </p>
-                    <p class="about-description">
-                        Our commitment to science-backed formulations and sustainable practices has made us a 
-                        trusted name in luxury skincare, helping thousands achieve their best skin.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">2018</div>
-                            <div class="stat-label">Founded</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">50K+</div>
-                            <div class="stat-label">Happy Customers</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">25+</div>
-                            <div class="stat-label">Products</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image" data-aos="fade-left">
-                    <img src="https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="About LiveAEVI" class="about-img">
-                </div>
+    <section class="shoppify-section-banner">
+      <div class="container">
+        <div class="product-collection">
+          <div class="left-content collection-item">
+            <div class="products-thumb">
+              <img src="images/model.jpg" alt="collection item" class="large-image image-rounded">
             </div>
-        </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 product-entry">
+              <div class="categories">Denim collection</div>
+              <h3 class="item-title">The casual selection.</h3>
+              <p>Vel non viverra ligula odio ornare turpis mauris. Odio aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio.</p>
+              <div class="btn-wrap">
+                <a href="shop.html" class="d-flex align-items-center">shop collection <i class="icon icon-arrow-io"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2 class="newsletter-title">Stay Updated</h2>
-                <p class="newsletter-description">
-                    Get the latest skincare tips, product launches, and exclusive offers delivered to your inbox.
-                </p>
-                <form class="newsletter-form" id="newsletterForm">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
+    <section id="quotation" class="align-center padding-large">
+      <div class="inner-content">
+        <h2 class="section-title divider">Quote of the day</h2>
+        <blockquote>
+          <q>It's true, I don't like the whole cutoff-shorts-and-T-shirt look, but I think you can look fantastic in casual clothes.</q>
+          <div class="author-name">- Dr. Seuss</div>
+        </blockquote>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-description">
-                    Have questions about our products or need personalized skincare advice? We're here to help.
-                </p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
-                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email Us</h4>
-                            <p>hello@liveaevi.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22 16.92V19.92C22 20.52 21.52 21 20.92 21C18.23 21 15.65 20.18 13.53 18.65C11.5 17.19 9.81 15.5 8.35 13.47C6.82 11.35 6 8.77 6 6.08C6 5.48 6.48 5 7.08 5H10.08C10.68 5 11.16 5.48 11.16 6.08C11.16 7.43 11.39 8.75 11.82 10.01C11.97 10.44 11.85 10.92 11.5 11.27L9.91 12.86C11.07 15.02 12.98 16.93 15.14 18.09L16.73 16.5C17.08 16.15 17.56 16.03 17.99 16.18C19.25 16.61 20.57 16.84 21.92 16.84C22.52 16.84 23 17.32 23 17.92Z" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Call Us</h4>
-                            <p>+1 (555) 123-SKIN</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5 7 1 12 1S21 5 21 10Z" stroke="currentColor" stroke-width="2"/>
-                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Visit Us</h4>
-                            <p>123 Beauty Ave, Skincare City, SC 12345</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm" data-aos="fade-left">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
-            </div>
+    <hr>
+    <section id="latest-blog" class="padding-large">
+      <div class="container">
+        <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
+          <h2 class="section-title">our Journal</h2>
+          <div class="btn-wrap align-right">
+            <a href="blog.html" class="d-flex align-items-center">Read All Articles <i class="icon icon icon-arrow-io"></i>
+            </a>
+          </div>
         </div>
+        <div class="row d-flex flex-wrap">
+          <article class="col-md-4 post-item">
+            <div class="image-holder zoom-effect">
+              <a href="single-post.html">
+                <img src="images/post-img1.jpg" alt="post" class="post-image">
+              </a>
+            </div>
+            <div class="post-content d-flex">
+              <div class="meta-date">
+                <div class="meta-day text-primary">22</div>
+                <div class="meta-month">Aug-2021</div>
+              </div>
+              <div class="post-header">
+                <h3 class="post-title">
+                  <a href="single-post.html">top 10 casual look ideas to dress up your kids</a>
+                </h3>
+                <a href="blog.html" class="blog-categories">Fashion</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 post-item">
+            <div class="image-holder zoom-effect">
+              <a href="single-post.html">
+                <img src="images/post-img2.jpg" alt="post" class="post-image">
+              </a>
+            </div>
+            <div class="post-content d-flex">
+              <div class="meta-date">
+                <div class="meta-day text-primary">25</div>
+                <div class="meta-month">Aug-2021</div>
+              </div>
+              <div class="post-header">
+                <h3 class="post-title">
+                  <a href="single-post.html">Latest trends of wearing street wears supremely</a>
+                </h3>
+                <a href="blog.html" class="blog-categories">Trending</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 post-item">
+            <div class="image-holder zoom-effect">
+              <a href="single-post.html">
+                <img src="images/post-img3.jpg" alt="post" class="post-image">
+              </a>
+            </div>
+            <div class="post-content d-flex">
+              <div class="meta-date">
+                <div class="meta-day text-primary">28</div>
+                <div class="meta-month">Aug-2021</div>
+              </div>
+              <div class="post-header">
+                <h3 class="post-title">
+                  <a href="single-post.html">types of comfortable clothes ideas for women</a>
+                </h3>
+                <a href="blog.html" class="blog-categories">Inspiration</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <span class="logo-text">LiveAEVI</span>
-                    </div>
-                    <p class="footer-description">
-                        Premium skincare solutions backed by science and crafted with the finest ingredients for radiant, healthy skin.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z" stroke="currentColor" stroke-width="2"/>
-                                <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23 3C22.0424 3.67548 20.9821 4.19211 19.86 4.53C19.2577 3.83751 18.4573 3.34669 17.567 3.12393C16.6767 2.90116 15.7395 2.957 14.8821 3.28445C14.0247 3.6119 13.2884 4.19439 12.773 4.95371C12.2575 5.71303 11.9877 6.61234 12 7.53V8.53C10.2426 8.57557 8.50127 8.18581 6.93101 7.39624C5.36074 6.60667 4.01032 5.43666 3 4C3 4 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.5C20.9991 7.22145 20.9723 6.943 20.92 6.67C21.9406 5.66349 22.6608 4.39271 23 3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Products</h4>
-                    <ul class="footer-links">
-                        <li><a href="#products">Serums</a></li>
-                        <li><a href="#products">Moisturizers</a></li>
-                        <li><a href="#products">Cleansers</a></li>
-                        <li><a href="#products">Treatments</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#science">Our Science</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="#contact">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns</a></li>
-                    </ul>
-                </div>
+    <section id="brand-collection" class="padding-medium bg-light-grey">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between">
+          <img src="images/brand1.png" alt="phone" class="brand-image">
+          <img src="images/brand2.png" alt="phone" class="brand-image">
+          <img src="images/brand3.png" alt="phone" class="brand-image">
+          <img src="images/brand4.png" alt="phone" class="brand-image">
+          <img src="images/brand5.png" alt="phone" class="brand-image">
+        </div>
+      </div>
+    </section>
+
+    <section id="instagram" class="padding-large">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Follow our instagram</h2>
+        </div>
+        <p>Our official Instagram account <a href="#">@ultras</a> or <a href="#">#ultras_clothing</a>
+        </p>
+        <div class="row d-flex flex-wrap justify-content-between">
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <figure class="zoom-effect">
+              <img src="images/insta-image1.jpg" alt="instagram" class="insta-image">
+              <i class="icon icon-instagram"></i>
+            </figure>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <figure class="zoom-effect">
+              <img src="images/insta-image2.jpg" alt="instagram" class="insta-image">
+              <i class="icon icon-instagram"></i>
+            </figure>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <figure class="zoom-effect">
+              <img src="images/insta-image3.jpg" alt="instagram" class="insta-image">
+              <i class="icon icon-instagram"></i>
+            </figure>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <figure class="zoom-effect">
+              <img src="images/insta-image4.jpg" alt="instagram" class="insta-image">
+              <i class="icon icon-instagram"></i>
+            </figure>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <figure class="zoom-effect">
+              <img src="images/insta-image5.jpg" alt="instagram" class="insta-image">
+              <i class="icon icon-instagram"></i>
+            </figure>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <figure class="zoom-effect">
+              <img src="images/insta-image6.jpg" alt="instagram" class="insta-image">
+              <i class="icon icon-instagram"></i>
+            </figure>
+          </div>
+        </div>          
+      </div>
+    </section>
+
+    <section id="shipping-information">
+      <hr>
+      <div class="container">
+        <div class="row d-flex flex-wrap align-items-center justify-content-between">
+          <div class="col-md-3 col-sm-6">
+            <div class="icon-box">
+              <i class="icon icon-truck"></i>
+              <h4 class="block-title">
+                <strong>Free shipping</strong> Over $200
+              </h4>
             </div>
-            <div class="footer-bottom">
-                <p class="footer-copyright">
-                    © 2024 LiveAEVI. All rights reserved.
-                </p>
-                <div class="footer-legal">
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="icon-box">
+              <i class="icon icon-return"></i>
+              <h4 class="block-title">
+                <strong>Money back</strong> Return within 7 days
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="icon-box">
+              <i class="icon icon-tags1"></i>
+              <h4 class="block-title">
+                <strong>Buy 4 get 5th</strong> 50% off
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="icon-box">
+              <i class="icon icon-help_outline"></i>
+              <h4 class="block-title">
+                <strong>Any questions?</strong> experts are ready
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-menu-list">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-menu">
+                <h5 class="widget-title">Ultras</h5>
+                <ul class="menu-list list-unstyled">
+                  <li class="menu-item">
+                    <a href="about.html">About us</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Conditions </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="blog.html">Our Journals</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Careers</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Affiliate Programme</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Ultras Press</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-menu">
+                <h5 class="widget-title">Customer Service</h5>
+                <ul class="menu-list list-unstyled">
+                  <li class="menu-item">
+                    <a href="faqs.html">FAQ</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="contact.html">Contact</a>
+                  </li>
+                  <li class="menu-item">
                     <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Returns & Refunds</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Cookie Guidelines</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Delivery Information</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-menu">
+                <h5 class="widget-title">Contact Us</h5>
+                <p>Do you have any questions or suggestions? <a href="#" class="email">ourservices@ultras.com</a>
+                </p>
+                <p>Do you need assistance? Give us a call. <br>
+                  <strong>+57 444 11 00 35</strong>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-menu">
+                <h5 class="widget-title">Forever 2018</h5>
+                <p>Cras mattis sit ornare in metus eu amet adipiscing enim. Ullamcorper in orci, ultrices integer eget arcu. Consectetur leo dignissim lacus, lacus sagittis dictumst.</p>
+                <div class="social-links">
+                  <ul class="d-flex list-unstyled">
+                    <li>
+                      <a href="#">
+                        <i class="icon icon-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="icon icon-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="icon icon-youtube-play"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="icon icon-behance-square"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <hr>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <div id="footer-bottom">
+      <div class="container">
+        <div class="d-flex align-items-center flex-wrap justify-content-between">
+          <div class="copyright">
+            <p>Freebies by <a href="https://templatesjungle.com/">Templates Jungle</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+            </p>
+          </div>
+          <div class="payment-method">
+            <p>Payment options :</p>
+            <div class="card-wrap">
+              <img src="images/visa-icon.jpg" alt="visa">
+              <img src="images/mastercard.png" alt="mastercard">
+              <img src="images/american-express.jpg" alt="american-express">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
