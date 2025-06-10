@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- <div style=" position: fixed; top: 0; left: 0; right: 0; z-index: 9999; background: red; color: white; padding: 5px; text-align: center;">
+  TEST BANNER — should be touching the top
+</div> -->
+
   <head>
     <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
     <meta charset="utf-8">
@@ -24,7 +28,7 @@
   </head>
   <body>
 
-    <div class="preloader-wrapper">
+    <div class="preloader-wrapper" style="background-color: transparent;">
       <div class="preloader">
       </div>
     </div>
@@ -64,165 +68,282 @@
         </ul>
       </div>
     </div>
-    <header id="header">
-      <div id="header-wrap">
-        <nav class="secondary-nav border-bottom">
-          <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-4 header-contact">
-                <p>Let's talk! <strong>+57 444 11 00 35</strong>
-                </p>
-              </div>
-              <div class="col-md-4 shipping-purchase text-center">
-                <p>Free shipping on a purchase value of $200</p>
-              </div>
-              <div class="col-md-4 col-sm-12 user-items">
-                <ul class="d-flex justify-content-end list-unstyled">
-                  <li>
-                    <a href="login.html">
-                      <i class="icon icon-user"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="cart.html">
-                      <i class="icon icon-shopping-cart"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="wishlist.html">
-                      <i class="icon icon-heart"></i>
-                    </a>
-                  </li>
-                  <li class="user-items search-item pe-3">
-                    <a href="#" class="search-button">
-                      <i class="icon icon-search"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <nav class="primary-nav padding-small">
-          <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-2 col-md-2">
-                <div class="main-logo">
-                  <a href="index.html">
-                    <img src="images/main-logo.png" alt="logo">
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-10">
-                <div class="navbar">
 
-                  <div id="main-nav" class="stellarnav d-flex justify-content-end right">
-                    <ul class="menu-list">
+<!-- ---------------------------- -->
+<style>
+  .primary-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    z-index: 3;
+    transition: background-color 0.3s ease;
+    border: 1px white solid;
+  }
+  .primary-banner:hover {
+    border: none;
+    color: #134fc2;
+    background-color: #d5e0ea;
+  }
+  .primary-banner p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    transition: color 0.3s ease;
+  }
 
-                      <li class="menu-item has-sub">
-                        <a href="index.html" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
-                          <li><a href="index.html" class="item-anchor active">Home</a></li>
-                          <li><a href="home2.html" class="item-anchor">Home v2<span class="text-primary"> (PRO)</span></a></li>
-                        </ul>
-                      </li>
+  #main-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    color: white;
+    z-index: 2;
+    visibility: visible;
+  }
+  #main-nav-bar a,
+  #main-nav-bar i {
+    color: white;
+    font-size: 12px;
+    transition: color 0.3s ease;
+  }
+  #main-nav-bar a:hover,
+  #main-nav-bar i:hover {
+    color: #a3bfdb !important;
+  }
+  #main-nav-bar.sticky {
+    background-color: white !important;
+    color: black !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  #main-nav-bar.sticky a,
+  #main-nav-bar.sticky i {
+    color: black !important;
+  }
+  .aevi-logo-container {
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  .logo-sticky {
+    display: none;
+  }
+  #main-nav-bar:hover ~ .swiper .aevi-logo-container {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #main-nav-bar:hover .logo-sticky {
+    display: block !important;
+  }
+  #main-nav-bar{
+      color: white;
+    }
+    #main-nav-bar:hover {
+      color: black;
+      background-color: white;
+    }
+    
+    #main-nav-bar:hover a ,#main-nav-bar:hover i{
+      color: black;
+    }
+    /* )))))))))))))))))))))))))))) */
+    body.hovering-primary-banner .swiper .AEVI{
+  opacity: 0;
+  visibility: hidden;
+}
 
-                      <li><a href="about.html" class="item-anchor" data-effect="About">About</a></li>
+/* Style main nav bar like sticky when hovering over primary banner */
+.primary-banner:hover {
+  background-color: #134fc2;
+}
 
-                      <li class="menu-item has-sub">
-                        <a href="shop.html" class="item-anchor d-flex align-item-center" data-effect="Shop">Shop<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
-                          <li><a href="shop.html" class="item-anchor">Shop</a></li>
-                          <li><a href="shop-slider.html" class="item-anchor">Shop slider<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="shop-grid.html" class="item-anchor">Shop grid<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="shop-list.html" class="item-anchor">Shop list<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="single-product.html" class="item-anchor">Single product<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="cart.html" class="item-anchor">Cart<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="wishlist.html" class="item-anchor">Wishlist<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="checkout.html" class="item-anchor">Checkout<span class="text-primary"> (PRO)</span></a></li>
-                        </ul>
-                      </li>
+.primary-banner:hover p {
+  color: white;
+}
+body.hovering-primary-banner .AEVI {
+  opacity: 0;
+  visibility: hidden;
+}
+#main-nav-bar a, #main-nav-bar ~ .primary-banner:hover  {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
-                      <li class="menu-item has-sub">
-                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Pages<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
-                          <li><a href="coming-soon.html" class="item-anchor">Coming soon<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="login.html" class="item-anchor">Login<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="faqs.html" class="item-anchor">FAQs<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="styles.html" class="item-anchor">Styles</a></li>
-                          <li><a href="thank-you.html" class="item-anchor">Thankyou</a></li>
-                          <li><a href="error.html" class="item-anchor">Error page<span class="text-primary"> (PRO)</span></a></li>
-                        </ul>
-                      </li>
+#main-nav-bar a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  text-decoration: none;
+  height: 1px;
+  color: black;
+  background-color: black;
+  transition: width 0.4s ease;
+}
 
-                      <li class="menu-item has-sub">
-                        <a href="blog.html" class="item-anchor d-flex align-item-center" data-effect="Blog">Blog<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
-                          <li><a href="blog.html" class="item-anchor">Blog</a></li>
-                          <li><a href="blog-sidebar.html" class="item-anchor">Blog with sidebar<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="blog-masonry.html" class="item-anchor">Blog masonry<span class="text-primary"> (PRO)</span></a></li>
-                          <li><a href="single-post.html" class="item-anchor">Single post</a></li>
-                        </ul>
-                      </li>
+#main-nav-bar a:hover {
+  color: black; /* Keep it black */
+  text-decoration: none;
+}
 
-                      <li><a href="contact.html" class="item-anchor" data-effect="Contact">Contact</a></li>
+#main-nav-bar a:hover::after {
+  text-decoration: none;
+  width: 100%;
+}
 
-                    </ul>
-                  </div>
+#main-nav-bar a:active,
+#main-nav-bar a:hover {
+  color: black !important;
+  text-decoration: none;
+}
+#main-nav-bar a{
+  color: white;
+}
+</style>
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
+<header id="header" class="scroll-header" style="width: 100%; z-index: 9999; transition: background 0.3s ease;">
+  <div class="primary-banner">
+    <p>SIGN UP TO OUR NEWSLETTER FOR 10% OFF</p>
+  </div>
+
+  <div class="nav-container" id="main-nav-bar">
+    <div class="nav-left" style="display: flex; gap: 1.5rem;">
+      <a href="shop.html" style="font-weight: 500; text-decoration: none;">SHOP</a>
+      <a href="#" style="font-weight: 500; text-decoration: none;">DISCOVER</a>
+    </div>
+    <div class="logo-sticky" style="position: absolute; left: 50%; transform: translateX(-50%);">
+      <img src="images/AEVI/aevi-logo-100_black.svg" alt="AEVI Logo" style="max-height: 40px;">
+    </div>
+    <div class="nav-right" style="display: flex; gap: 1.5rem; align-items: center;">
+      <a href="#" style="font-weight: 500; text-decoration: none;">REST OF WORLD / EUR</a>
+      <a href="#" style="font-weight: 500; text-decoration: none;">SUBSCRIBE</a>
+      <i class="icon icon-search"></i>
+      <i class="icon icon-user"></i>
+      <i class="icon icon-cart"></i>
+    </div>
+  </div>
+</header>
+
+<div class="swiper main-swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="position: relative; background-image: url('images/AEVI/Page1.webp'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="aevi-logo-container" style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); z-index: 2;" id="aevi-logo-carousel">
+        <img src="images/AEVI/AEVI.svg" id="AEVI" alt="AEVI Logo" style=" width: 100%;">
       </div>
-    </header>
-
-    <section id="billboard" class="overflow-hidden">
-
-      <button class="button-prev">
-        <i class="icon icon-chevron-left"></i>
-      </button>
-      <button class="button-next">
-        <i class="icon icon-chevron-right"></i>
-      </button>
-      <div class="swiper main-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('images/banner1.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
-            <div class="banner-content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h2 class="banner-title">Summer Collection</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
-                    <div class="btn-wrap">
-                      <a href="shop.html" class="btn btn-light btn-medium d-flex align-items-center" tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image: url('images/banner2.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
-            <div class="banner-content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h2 class="banner-title">Casual Collection</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
-                    <div class="btn-wrap">
-                      <a href="shop.html" class="btn btn-light btn-light-arrow btn-medium d-flex align-items-center" tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="desc-container" style="position: absolute; bottom: 10%; left: 5%; z-index: 2; max-width: 600px;">
+        <p style="font-size: 38px; color:white; font-weight: 300; margin-bottom: 25px;line-height:normal;">SKIN DETOX WITH THE<br>CLARIFYING CLAY MASK</p>
+        <div class="btn-wrap">
+          <a href="shop.html" style="border-radius: 30px; background-color: #a3bfdb; border: 1px solid black; padding: 10px 25px; color: black; font-weight: 500;" class="btn" tabindex="0">SHOP NOW</a>
         </div>
       </div>
+    </div>
+    <div class="swiper-slide" style="position: relative; background-image: url('images/AEVI/Page2.webp'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="aevi-logo-container" style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); z-index: 2;">
+        <img src="images/AEVI/AEVI.svg"id="AEVI" alt="AEVI Logo" style="width: 100%;">
+      </div>
+      <div class="desc-container" style="position: absolute; bottom: 10%; left: 5%; z-index: 2; max-width: 600px;">
+        <p style="font-size: 38px; color:white; font-weight: 300; margin-bottom: 25px;line-height:normal;">CLEAN, GENTLE & RESULTS-DRIVEN</p>
+        <div class="btn-wrap">
+          <a href="shop.html" style="border-radius: 30px; background-color: #a3bfdb; border: 1px solid black; padding: 10px 25px; color: black; font-weight: 500;" class="btn" tabindex="0">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" style="position: relative; background-image: url('images/AEVI/Page3.webp'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="aevi-logo-container" style="position: absolute; top: 24%; left: 50%; transform: translateX(-50%); z-index: 2;">
+        <img src="images/AEVI/AEVI.svg" id="AEVI" alt="AEVI Logo" style="width: 100%;">
+      </div>
+      <div class="desc-container" style="position: absolute; bottom: 10%; left: 5%; z-index: 2; max-width: 600px;">
+        <p style="font-size: 38px; color:white; font-weight: 300; margin-bottom: 25px;line-height:normal;">SKIN DETOX WITH THE CLARIFYING CLAY MASK</p>
+        <div class="btn-wrap">
+          <a href="shop.html" style="border-radius: 30px; background-color: #a3bfdb; border: 1px solid black; padding: 10px 25px; color: black; font-weight: 500;" class="btn" tabindex="0">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  window.addEventListener('scroll', function() {
+    const logoCarousel = document.getElementById('aevi-logo-carousel');
+    const stickyLogo = document.querySelector('.logo-sticky');
+    const navBar = document.getElementById('main-nav-bar');
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > document.getElementById('main-nav-bar').offsetTop) {
+      if (logoCarousel) logoCarousel.style.opacity = '0';
+      if (stickyLogo) stickyLogo.style.display = 'block';
+      navBar.classList.add('sticky');
+    } else {
+      if (logoCarousel) logoCarousel.style.opacity = '1';
+      if (stickyLogo) stickyLogo.style.display = 'none';
+      navBar.classList.remove('sticky');
+    }
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const primaryBanner = document.querySelector(".primary-banner");
+    primaryBanner.addEventListener("mouseenter", () => {
+      document.body.classList.add("hovering-primary-banner");
+    });
+    primaryBanner.addEventListener("mouseleave", () => {
+      document.body.classList.remove("hovering-primary-banner");
+    });
+  });
+</script>
+
+
+<!-- Keep existing scripts and other content -->
+
     </section>
+    <script>
+      const messages = [
+        "BEST FACE OIL OF 2024 | NOURISHING FACE OIL",
+        "VEGAN & CRUELTY FREE | SUSTAINABLY SOURCED",
+        "FREE SHIPPING OVER €50 | WORLDWIDE DELIVERY"
+      ];
+      let i = 0;
+
+      setInterval(() => {
+        const el = document.getElementById("rotating-msg");
+        el.style.opacity = 0;
+        setTimeout(() => {
+          el.textContent = messages[i = (i + 1) % messages.length];
+          el.style.opacity = 1;
+        }, 500);
+      }, 4000);
+      const headerWrap = document.getElementById('header-wrap');
+      const primaryNav = document.querySelector('.primary-nav');
+      const secondaryNav = document.querySelector('.secondary-nav');
+
+      if (primaryNav) {
+        primaryNav.addEventListener('mouseenter', () => primaryNav.classList.add('hovered'));
+        primaryNav.addEventListener('mouseleave', () => primaryNav.classList.remove('hovered'));
+      }
+
+      if (secondaryNav) {
+        secondaryNav.addEventListener('mouseenter', () => secondaryNav.classList.add('hovered'));
+        secondaryNav.addEventListener('mouseleave', () => secondaryNav.classList.remove('hovered'));
+      }
+    </script>
+     <!-- -------------------- -->
 
     <section id="featured-products" class="product-store padding-large">
       <div class="container">
