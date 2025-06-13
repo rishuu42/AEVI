@@ -5,7 +5,7 @@
 </div> -->
 
   <head>
-    <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
+    <title>Aevi | Pure Nordic Skincare for Sensitive Skin | Gentle & Sustainable</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,7 @@
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
 
@@ -69,154 +70,7 @@
       </div>
     </div>
 
-<!-- ---------------------------- -->
-<style>
-  .primary-banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 0.5rem 0;
-    background-color: transparent;
-    z-index: 3;
-    transition: background-color 0.3s ease;
-    border: 1px white solid;
-  }
-  .primary-banner:hover {
-    border: none;
-    color: #134fc2;
-    background-color: #d5e0ea;
-  }
-  .primary-banner p {
-    margin: 0;
-    font-weight: bold;
-    font-size: 12px;
-    color: white;
-    transition: color 0.3s ease;
-  }
-
-  #main-nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    position: absolute;
-    top: 2.5rem;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-    color: white;
-    z-index: 2;
-    visibility: visible;
-  }
-  #main-nav-bar a,
-  #main-nav-bar i {
-    color: white;
-    font-size: 12px;
-    transition: color 0.3s ease;
-  }
-  #main-nav-bar a:hover,
-  #main-nav-bar i:hover {
-    color: #a3bfdb !important;
-  }
-  #main-nav-bar.sticky {
-    background-color: white !important;
-    color: black !important;
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-  #main-nav-bar.sticky a,
-  #main-nav-bar.sticky i {
-    color: black !important;
-  }
-  .aevi-logo-container {
-    display: block;
-    transition: opacity 0.3s ease;
-  }
-  .logo-sticky {
-    display: none;
-  }
-  #main-nav-bar:hover ~ .swiper .aevi-logo-container {
-    opacity: 0;
-    visibility: hidden;
-  }
-  #main-nav-bar:hover .logo-sticky {
-    display: block !important;
-  }
-  #main-nav-bar{
-      color: white;
-    }
-    #main-nav-bar:hover {
-      color: black;
-      background-color: white;
-    }
-    
-    #main-nav-bar:hover a ,#main-nav-bar:hover i{
-      color: black;
-    }
-    /* )))))))))))))))))))))))))))) */
-    body.hovering-primary-banner .swiper .AEVI{
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* Style main nav bar like sticky when hovering over primary banner */
-.primary-banner:hover {
-  background-color: #134fc2;
-}
-
-.primary-banner:hover p {
-  color: white;
-}
-body.hovering-primary-banner .AEVI {
-  opacity: 0;
-  visibility: hidden;
-}
-#main-nav-bar a, #main-nav-bar ~ .primary-banner:hover  {
-  position: relative;
-  color: black;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-#main-nav-bar a::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0%;
-  text-decoration: none;
-  height: 1px;
-  color: black;
-  background-color: black;
-  transition: width 0.4s ease;
-}
-
-#main-nav-bar a:hover {
-  color: black; /* Keep it black */
-  text-decoration: none;
-}
-
-#main-nav-bar a:hover::after {
-  text-decoration: none;
-  width: 100%;
-}
-
-#main-nav-bar a:active,
-#main-nav-bar a:hover {
-  color: black !important;
-  text-decoration: none;
-}
-#main-nav-bar a{
-  color: white;
-}
-</style>
-
+    <!-- Main Carousel -->
 <header id="header" class="scroll-header" style="width: 100%; z-index: 9999; transition: background 0.3s ease;">
   <div class="primary-banner">
     <p>SIGN UP TO OUR NEWSLETTER FOR 10% OFF</p>
@@ -278,198 +132,741 @@ body.hovering-primary-banner .AEVI {
   </div>
 </div>
 
-<script>
-  
-  window.addEventListener('scroll', function() {
-    const logoCarousel = document.getElementById('aevi-logo-carousel');
-    const stickyLogo = document.querySelector('.logo-sticky');
-    const navBar = document.getElementById('main-nav-bar');
-    const scrollTop = window.scrollY;
 
-    if (scrollTop > document.getElementById('main-nav-bar').offsetTop) {
-      if (logoCarousel) logoCarousel.style.opacity = '0';
-      if (stickyLogo) stickyLogo.style.display = 'block';
-      navBar.classList.add('sticky');
-    } else {
-      if (logoCarousel) logoCarousel.style.opacity = '1';
-      if (stickyLogo) stickyLogo.style.display = 'none';
-      navBar.classList.remove('sticky');
-    }
-  });
+     <!-- FIRST LOGO MARQUEE -->
 
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const primaryBanner = document.querySelector(".primary-banner");
-    primaryBanner.addEventListener("mouseenter", () => {
-      document.body.classList.add("hovering-primary-banner");
-    });
-    primaryBanner.addEventListener("mouseleave", () => {
-      document.body.classList.remove("hovering-primary-banner");
-    });
-  });
-</script>
-
-
-<!-- Keep existing scripts and other content -->
-
-    </section>
-    <script>
-      const messages = [
-        "BEST FACE OIL OF 2024 | NOURISHING FACE OIL",
-        "VEGAN & CRUELTY FREE | SUSTAINABLY SOURCED",
-        "FREE SHIPPING OVER €50 | WORLDWIDE DELIVERY"
-      ];
-      let i = 0;
-
-      setInterval(() => {
-        const el = document.getElementById("rotating-msg");
-        el.style.opacity = 0;
-        setTimeout(() => {
-          el.textContent = messages[i = (i + 1) % messages.length];
-          el.style.opacity = 1;
-        }, 500);
-      }, 4000);
-      const headerWrap = document.getElementById('header-wrap');
-      const primaryNav = document.querySelector('.primary-nav');
-      const secondaryNav = document.querySelector('.secondary-nav');
-
-      if (primaryNav) {
-        primaryNav.addEventListener('mouseenter', () => primaryNav.classList.add('hovered'));
-        primaryNav.addEventListener('mouseleave', () => primaryNav.classList.remove('hovered'));
+     <style>
+      .logo-marquee {
+        background-color: #134fc2;
+        overflow: hidden;
+        padding: 1rem 0;
+        position: relative;
       }
 
-      if (secondaryNav) {
-        secondaryNav.addEventListener('mouseenter', () => secondaryNav.classList.add('hovered'));
-        secondaryNav.addEventListener('mouseleave', () => secondaryNav.classList.remove('hovered'));
+      .logo-track {
+        display: flex;
+        flex-wrap: nowrap;
+        width: max-content;
+        gap: 3rem;
+        animation: scroll-left 17s linear infinite;
       }
-    </script>
-     <!-- -------------------- -->
 
-    <section id="featured-products" class="product-store padding-large">
-      <div class="container">
-        <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
-          <h2 class="section-title">Featured Products</h2>            
-          <div class="btn-wrap">
-            <a href="shop.html" class="d-flex align-items-center">View all products <i class="icon icon icon-arrow-io"></i></a>
-          </div>            
+      .logo-track img {
+        height: 40px;
+        width: auto;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        transition: transform 0.3s ease;
+      }
+
+      .logo-track:hover {
+          animation-play-state: paused;
+        }
+
+
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+
+     </style>
+
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-GentlemansJournal-White.webp" alt="Logo 1" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-GetTheGloss-White_b647140e-2ae5-414a-a5ec-14867756c7f9.webp" alt="Logo 2" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Glamour-White.png" alt="Logo 3" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-RobbReport-White.webp" alt="Logo 4" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Stylist-White.webp" alt="Logo 5" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Tirolerin-White.png" alt="Logo 6" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-VanityFair-White.png" alt="Logo 7" />
+
+
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-GentlemansJournal-White.webp" alt="Logo 1" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-GetTheGloss-White_b647140e-2ae5-414a-a5ec-14867756c7f9.webp" alt="Logo 2" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Glamour-White.png" alt="Logo 3" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-RobbReport-White.webp" alt="Logo 4" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Stylist-White.webp" alt="Logo 5" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Tirolerin-White.png" alt="Logo 6" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-VanityFair-White.png" alt="Logo 7" />
         </div>
-        <div class="swiper product-swiper overflow-hidden">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="product-item">
-                <div class="image-holder">
-                  <img src="images/product-item1.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Full sleeve cover shirt</a>
-                  </h3>
-                  <span class="item-price text-primary">$40.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <div class="image-holder">
-                  <img src="images/product-item2.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Volunteer Half blue</a>
-                  </h3>
-                  <span class="item-price text-primary">$38.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <div class="image-holder">
-                  <img src="images/product-item3.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Double yellow shirt</a>
-                  </h3>
-                  <span class="item-price text-primary">$44.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <div class="image-holder">
-                  <img src="images/product-item4.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Long belly grey pant</a>
-                  </h3>
-                  <span class="item-price text-primary">$33.00</span>
-                </div>
-              </div>
-            </div>
+      </div>
+
+      <div style="margin: 5px 10px;">
+        <h2 style="line-height: normal; margin-bottom: 0;">BESTSELLERS</h2>
+        <p>Dermatologist-tested and clinically proven formulas with Nordic ingredients</p>
+      </div>
+
+
+      <!-- <--------------------------> 
+      <style>
+        .product-scroll-container {
+          overflow-x: auto;
+          white-space: nowrap;
+          padding: 2rem;
+        }
+
+        .product-card {
+          position: relative;
+          width: 300px;
+          display: inline-block;
+          background: #fff;
+          border-radius: 8px;
+          margin-right: 1rem;
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+          transition: transform 0.4s ease;
+        }
+
+        .product-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .product-image {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .product-image img {
+          width: 100%;
+          display: block;
+          transition: opacity 0.3s ease;
+        }
+
+        .product-image .hover-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+
+        .product-card:hover .hover-img {
+          opacity: 1;
+        }
+
+        .product-card:hover .main-img {
+          opacity: 0;
+        }
+
+        .label {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background: #d5e0ea;
+          color: #134fc2;
+          padding: 5px 10px;
+          font-weight: bold;
+          font-size: 12px;
+          border-radius: 5px;
+        }
+
+        .product-info {
+          padding: 1rem;
+        }
+
+        .product-info h3 {
+          font-size: 16px;
+          margin: 0 0 0.3rem;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .product-info p {
+          font-size: 14px;
+          margin: 0 0 0.5rem;
+        }
+
+        .stars {
+          font-size: 14px;
+          color: #000;
+        }
+
+        .product-hover-popup {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(255, 255, 255, 0.95);
+          padding: 1rem;
+          display: none;
+          flex-direction: column;
+        }
+
+        .product-card:hover .product-hover-popup {
+          display: flex;
+        }
+
+        .product-hover-popup label {
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+
+        .product-hover-popup select {
+          width: 100%;
+          margin-bottom: 1rem;
+          padding: 0.4rem;
+        }
+
+        .product-hover-popup button {
+          background-color: #a3bfdb;
+          color: #000;
+          font-weight: bold;
+          padding: 0.6rem;
+          border: 1px solid black;
+          border-radius: 30px;
+          cursor: pointer;
+        }
+
+      </style>
+
+      <div class="product-scroll-container">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </section>
+<!-- ----------------------------- -->
+ <style>
+  .aevi-block-section {
+  width: 100vw;
+  overflow: hidden;
+}
 
-    <section id="latest-collection">
+.aevi-block-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.aevi-block-image,
+.aevi-block-text {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.aevi-block-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aevi-block-text {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.aevi-block-text h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.aevi-block-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.aevi-block-readmore {
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: black;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.aevi-block-readmore:hover {
+  color: #134fc2;
+}
+
+
+</style>
+
+ <div class="aevi-block-section">
+
+  <!-- Block 1 -->
+  <div class="aevi-block-container">
+    <div class="aevi-block-image">
+      <img src="./images/AEVI/two divs/Aevi-Web-Homepage-Square-01.webp" alt="Product 1" />
+    </div>
+    <div class="aevi-block-text">
+      <h2>CLEAN, GENTLE<br>+ RESULTS-DRIVEN</h2>
+      <p>
+        Aevi is made with pure, therapeutic ingredients from Nordic nature. Our performance-driven formulas are clinically tested to ensure efficacy and visible results while still being gentle for sensitive skin.
+      </p>
+      <a href="#" class="aevi-block-readmore">READ MORE</a>
+    </div>
+  </div>
+
+  <!-- Block 2 -->
+  <div class="aevi-block-container">
+    <div class="aevi-block-text">
+      <h2>FOR SENSITIVE <br> SKIN, BY<br> SENSITIVE SKIN</h2>
+      <p>
+        Aevi is dermatologically tested and suitable for even the most sensitive skin.<br><br>
+        Our skincare is expertly formulated to soothe, hydrate, nourish and strengthen the skin because we believe building healthy, resilient skin is the key to naturally radiant beauty and well-ageing.
+      </p>
+      <a href="#" class="aevi-block-readmore">READ MORE</a>
+    </div>
+    <div class="aevi-block-image">
+      <img src="./images/AEVI/two divs/Aevi-Web-Homepage-Square-03.webp" alt="Product 2" />
+    </div>
+  </div>
+
+</div>
+
+
+
+
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-GentlemansJournal-White.webp" alt="Logo 1" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-GetTheGloss-White_b647140e-2ae5-414a-a5ec-14867756c7f9.webp" alt="Logo 2" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Glamour-White.png" alt="Logo 3" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-RobbReport-White.webp" alt="Logo 4" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Stylist-White.webp" alt="Logo 5" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Tirolerin-White.png" alt="Logo 6" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-VanityFair-White.png" alt="Logo 7" />
+
+
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-GentlemansJournal-White.webp" alt="Logo 1" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-GetTheGloss-White_b647140e-2ae5-414a-a5ec-14867756c7f9.webp" alt="Logo 2" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Glamour-White.png" alt="Logo 3" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-RobbReport-White.webp" alt="Logo 4" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Stylist-White.webp" alt="Logo 5" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-Tirolerin-White.png" alt="Logo 6" />
+          <img src="./images/AEVI/FirstMarqu/Aevi-Website-Press-VanityFair-White.png" alt="Logo 7" />
+        </div>
+      </div>
+
+      
+
+
+      <div class="product-scroll-container">
+        <div style="margin: 5px 10px;">
+        <h2 style="line-height: normal; margin-bottom: 0;">GIFTS, SETS + BUNDLES</h2>
+        <p>Curated edits of bestselling clean beauty</p>
+      </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/AEVI/Cards/Card1_2.png" alt="Product Front" class="main-img">
+            <img src="./images/AEVI/Cards/card1_1.webp" alt="Product Hover" class="hover-img">
+            <span class="label">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>NOURISHING FACE OIL <span class="price">€98</span></h3>
+            <p>Radiance Enhancing Nordic Super Berries</p>
+            <div class="stars">★★★★★ <span>(20)</span></div>
+          </div>
+          <div class="product-hover-popup">
+            <form>
+              <label>
+                <input type="radio" name="delivery" checked>
+                Subscribe + save 15%
+              </label>
+              <select>
+                <option>Every 30 days</option>
+                <option>Every 60 days</option>
+              </select>
+              <label>
+                <input type="radio" name="delivery">
+                One time delivery
+              </label>
+              <button type="button">ADD TO BAG</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- 0000000000000000000000000000--><br><br>    
+     <section id="latest-collection">
       <div class="container">
         <div class="product-collection row">
           <div class="col-lg-7 col-md-12 left-content">
@@ -520,1381 +917,180 @@ body.hovering-primary-banner .AEVI {
       </div>
     </section>
 
-    <section id="subscribe" class="padding-large">
-      <div class="container">
-        <div class="row">
-          <div class="block-text col-md-6">
-            <div class="section-header">
-              <h2 class="section-title">Get 25% off Discount Coupons</h2>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst amet, metus, sit massa posuere maecenas. At tellus ut nunc amet vel egestas.</p>
+    <style>
+      .aevi-footer {
+  background: #d5e0ea;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: #111;
+}
+
+.aevi-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.aevi-footer-left {
+  flex: 1 1 300px;
+  min-width: 300px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 2rem;
+}
+
+.footer-newsletter h4 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.footer-newsletter p {
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.newsletter-input {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+}
+
+.newsletter-input input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+}
+
+.newsletter-input button {
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer-payments {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer-payments img {
+  height: 24px;
+}
+
+.footer-address {
+  font-size: 12px;
+  color: #333;
+  margin-top: 2rem;
+}
+
+.aevi-footer-links {
+  flex: 1 1 600px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.aevi-footer-links h5 {
+  font-size: 13px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.aevi-footer-links a {
+  display: block;
+  font-size: 16px;
+  color: #111;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.aevi-footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+    </style>
+
+
+    <footer class="aevi-footer">
+  <div class="aevi-footer-container">
+
+    <!-- Left Column -->
+    <div class="aevi-footer-left">
+      <img src="./images/aevi_animated_logo_gif.webp" alt="AEVI Logo" class="footer-logo" />
+
+      <div class="footer-newsletter">
+        <h4>LET'S CONNECT</h4>
+        <p>Subscribe to our newsletter and get 10% off your first order.</p>
+        <form method="post" action="#">
+          <div class="newsletter-input">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit">SUBSCRIBE</button>
           </div>
-          <div class="subscribe-content col-md-6">
-            <form id="form" class="d-flex justify-content-between">
-              <input type="text" name="email" placeholder="Enter your email addresss here">
-              <button class="btn btn-dark">Subscribe Now</button>
-            </form>
-          </div>
-        </div>
+        </form>
       </div>
-    </section>
 
-    <section id="selling-products" class="product-store bg-light-grey padding-large">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Best selling products</h2>
-        </div>
-        <ul class="tabs list-unstyled">
-          <li data-tab-target="#all" class="active tab">All</li>
-          <li data-tab-target="#shoes" class="tab">Shoes</li>
-          <li data-tab-target="#tshirts" class="tab">Tshirts</li>
-          <li data-tab-target="#pants" class="tab">Pants</li>
-          <li data-tab-target="#hoodie" class="tab">Hoodie</li>
-          <li data-tab-target="#outer" class="tab">Outer</li>
-          <li data-tab-target="#jackets" class="tab">Jackets</li>
-          <li data-tab-target="#accessories" class="tab">Accessories</li>
-        </ul>
-        <div class="tab-content">
-          <div id="all" data-tab-content class="active">
-            <div class="row d-flex flex-wrap">
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products1.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Half sleeve T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products2.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Stylish Grey T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$35.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products3.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Silk White Shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$35.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products4.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Grunge Hoodie</a>
-                  </h3>
-                  <div class="item-price text-primary">$30.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products5.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Full sleeve Jeans jacket</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products6.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Grey Check Coat</a>
-                  </h3>
-                  <div class="item-price text-primary">$30.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products7.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Long Sleeve T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products8.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Half Sleeve T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$35.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products13.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Orange white Nike</a>
-                  </h3>
-                  <div class="item-price text-primary">$55.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products14.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Running Shoe</a>
-                  </h3>
-                  <div class="item-price text-primary">$65.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products15.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Tennis Shoe</a>
-                  </h3>
-                  <div class="item-price text-primary">$80.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products16.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Nike Brand Shoe</a>
-                  </h3>
-                  <div class="item-price text-primary">$65.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="shoes" data-tab-content>
-            <div class="row d-flex flex-wrap">
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products13.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Orange white Nike</a>
-                  </h3>
-                  <div class="item-price text-primary">$55.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products14.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Running Shoe</a>
-                  </h3>
-                  <div class="item-price text-primary">$65.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products15.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Tennis Shoe</a>
-                  </h3>
-                  <div class="item-price text-primary">$80.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products16.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Nike Brand Shoe</a>
-                  </h3>
-                  <div class="item-price text-primary">$65.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="tshirts" data-tab-content>
-            <div class="row d-flex flex-wrap">
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products3.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Silk White Shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$35.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products8.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">White Half T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$30.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products5.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Ghee Half T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products7.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Long Sleeve T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="pants" data-tab-content>
-            <div class="row d-flex flex-wrap">
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products1.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Half sleeve T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products4.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Grunge Hoodie</a>
-                  </h3>
-                  <div class="item-price text-primary">$30.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products7.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Long Sleeve T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products2.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Stylish Grey Pant</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="hoodie" data-tab-content>
-            <div class="row d-flex flex-wrap">
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products17.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">White Hoodie</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products4.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Navy Blue Hoodie</a>
-                  </h3>
-                  <div class="item-price text-primary">$45.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products18.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Dark Green Hoodie</a>
-                  </h3>
-                  <div class="item-price text-primary">$35.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="outer" data-tab-content>
-            <div class="row d-flex flex-wrap">
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products3.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Silk White Shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$ 35.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products4.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Grunge Hoodie</a>
-                  </h3>
-                  <div class="item-price text-primary">$ 30.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products6.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Grey Check Coat</a>
-                  </h3>
-                  <div class="item-price text-primary">$ 30.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products7.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Long Sleeve T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">$ 40.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="jackets" data-tab-content>
-            <div class="row d-flex flex-wrap">
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products5.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Full Sleeve Jeans Jacket</a>
-                  </h3>
-                  <div class="item-price text-primary">$40.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products2.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Stylish Grey Coat</a>
-                  </h3>
-                  <div class="item-price text-primary">$35.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products6.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Grey Check Coat</a>
-                  </h3>
-                  <div class="item-price text-primary">$35.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="accessories" data-tab-content>
-            <div class="row d-flex flex-wrap">
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products19.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Stylish Women Bag</a>
-                  </h3>
-                  <div class="item-price text-primary">$35.00</div>
-                </div>
-              </div>
-              <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                <div class="image-holder">
-                  <img src="images/selling-products20.jpg" alt="Books" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Stylish Gadgets</a>
-                  </h3>
-                  <div class="item-price text-primary">$30.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="footer-payments">
+        <img src="./images/AEVI/FooterIcons/amex.png" alt="Amex" />
+        <img src="./images/AEVI/FooterIcons/apay.png" alt="Apple Pay" />
+        <img src="./images/AEVI/FooterIcons/images.png" alt="Google Pay" />
+        <img src="./images/AEVI/FooterIcons/mastercard.png" alt="Mastercard" />
+        <img src="./images/AEVI/FooterIcons/paypal.png" alt="PayPal" />
+        <img src="./images/AEVI/FooterIcons/shop.png" alt="Shop Pay" />
+        <img src="./images/AEVI/FooterIcons/UnionPay_logo.svg.png" alt="UnionPay" />
+        <img src="./images/AEVI/FooterIcons/visa.jpg" alt="Visa" />
       </div>
-    </section>
 
-    <section id="testimonials" class="padding-large no-padding-bottom">
-      <div class="container">
-        <div class="reviews-content">
-          <div class="row d-flex flex-wrap">
-            <div class="col-md-2">
-              <div class="review-icon">
-                <i class="icon icon-right-quote"></i>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="swiper testimonial-swiper overflow-hidden">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonial-detail">
-                      <p>“Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.”</p>
-                      <div class="author-detail">
-                        <div class="name">By Maggie Rio</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="testimonial-detail">
-                      <p>“Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.”</p>
-                      <div class="author-detail">
-                        <div class="name">By John Smith</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-arrows">
-                <button class="prev-button">
-                  <i class="icon icon-arrow-left"></i>
-                </button>
-                <button class="next-button">
-                  <i class="icon icon-arrow-right"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+      <p class="footer-address">
+        © 2025 Aevi Wellness - Aevi Wellness AB, Klocka 185, 837 71 Duved, Sweden
+      </p>
+    </div>
+
+    <!-- Right Columns -->
+    <div class="aevi-footer-links">
+      <div>
+        <h5>ABOUT</h5>
+        <a href="#">Story</a>
+        <a href="#">Stockists</a>
+        <a href="#">Contact</a>
+        <a href="#">Journal</a>
       </div>
-    </section>
 
-    <section id="flash-sales" class="product-store padding-large">
-      
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Flash sales</h2>
-        </div>
-        <div class="swiper product-swiper flash-sales overflow-hidden">
-
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="product-item">
-                <img src="images/selling-products9.jpg" alt="Books" class="product-image">
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="discount">10% Off</div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Full sleeve cover shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">
-                    <del class="prev-price">$50.00</del>$40.00
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <img src="images/selling-products10.jpg" alt="Books" class="product-image">
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="discount">10% Off</div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Long Sleeve T-shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">
-                    <del class="prev-price">$50.00</del>$40.00
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <img src="images/selling-products11.jpg" alt="Books" class="product-image">
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="discount">10% Off</div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Grey Check Coat</a>
-                  </h3>
-                  <div class="item-price text-primary">
-                    <del class="prev-price">$55.00</del>$45.00
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <img src="images/selling-products12.jpg" alt="Books" class="product-image">
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="discount">10% Off</div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Silk White Shirt</a>
-                  </h3>
-                  <div class="item-price text-primary">
-                    <del class="prev-price">$45.00</del>$35.00
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item">
-                <img src="images/selling-products8.jpg" alt="Books" class="product-image">
-                <div class="cart-concern">
-                  <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
-                    </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="discount">10% Off</div>
-                <div class="product-detail">
-                  <h3 class="product-title">
-                    <a href="single-product.html">Blue Jeans pant</a>
-                  </h3>
-                  <div class="item-price text-primary">
-                    <del class="prev-price">$45.00</del>$35.00
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-
-        </div>
+      <div>
+        <h5>LEGAL</h5>
+        <a href="#">FAQ</a>
+        <a href="#">Terms</a>
+        <a href="#">Care</a>
+        <a href="#">Privacy</a>
       </div>
-    </section>
 
-    <section class="shoppify-section-banner">
-      <div class="container">
-        <div class="product-collection">
-          <div class="left-content collection-item">
-            <div class="products-thumb">
-              <img src="images/model.jpg" alt="collection item" class="large-image image-rounded">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 product-entry">
-              <div class="categories">Denim collection</div>
-              <h3 class="item-title">The casual selection.</h3>
-              <p>Vel non viverra ligula odio ornare turpis mauris. Odio aliquam, tincidunt ut vitae elit risus. Tempor egestas condimentum et ac rutrum dui, odio.</p>
-              <div class="btn-wrap">
-                <a href="shop.html" class="d-flex align-items-center">shop collection <i class="icon icon-arrow-io"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>        
+      <div>
+        <h5>SOCIAL MEDIA</h5>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
       </div>
-    </section>
+    </div>
+  </div>
+</footer>
 
-    <section id="quotation" class="align-center padding-large">
-      <div class="inner-content">
-        <h2 class="section-title divider">Quote of the day</h2>
-        <blockquote>
-          <q>It's true, I don't like the whole cutoff-shorts-and-T-shirt look, but I think you can look fantastic in casual clothes.</q>
-          <div class="author-name">- Dr. Seuss</div>
-        </blockquote>
-      </div>
-    </section>
 
-    <hr>
-    <section id="latest-blog" class="padding-large">
-      <div class="container">
-        <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
-          <h2 class="section-title">our Journal</h2>
-          <div class="btn-wrap align-right">
-            <a href="blog.html" class="d-flex align-items-center">Read All Articles <i class="icon icon icon-arrow-io"></i>
-            </a>
-          </div>
-        </div>
-        <div class="row d-flex flex-wrap">
-          <article class="col-md-4 post-item">
-            <div class="image-holder zoom-effect">
-              <a href="single-post.html">
-                <img src="images/post-img1.jpg" alt="post" class="post-image">
-              </a>
-            </div>
-            <div class="post-content d-flex">
-              <div class="meta-date">
-                <div class="meta-day text-primary">22</div>
-                <div class="meta-month">Aug-2021</div>
-              </div>
-              <div class="post-header">
-                <h3 class="post-title">
-                  <a href="single-post.html">top 10 casual look ideas to dress up your kids</a>
-                </h3>
-                <a href="blog.html" class="blog-categories">Fashion</a>
-              </div>
-            </div>
-          </article>
-          <article class="col-md-4 post-item">
-            <div class="image-holder zoom-effect">
-              <a href="single-post.html">
-                <img src="images/post-img2.jpg" alt="post" class="post-image">
-              </a>
-            </div>
-            <div class="post-content d-flex">
-              <div class="meta-date">
-                <div class="meta-day text-primary">25</div>
-                <div class="meta-month">Aug-2021</div>
-              </div>
-              <div class="post-header">
-                <h3 class="post-title">
-                  <a href="single-post.html">Latest trends of wearing street wears supremely</a>
-                </h3>
-                <a href="blog.html" class="blog-categories">Trending</a>
-              </div>
-            </div>
-          </article>
-          <article class="col-md-4 post-item">
-            <div class="image-holder zoom-effect">
-              <a href="single-post.html">
-                <img src="images/post-img3.jpg" alt="post" class="post-image">
-              </a>
-            </div>
-            <div class="post-content d-flex">
-              <div class="meta-date">
-                <div class="meta-day text-primary">28</div>
-                <div class="meta-month">Aug-2021</div>
-              </div>
-              <div class="post-header">
-                <h3 class="post-title">
-                  <a href="single-post.html">types of comfortable clothes ideas for women</a>
-                </h3>
-                <a href="blog.html" class="blog-categories">Inspiration</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section id="brand-collection" class="padding-medium bg-light-grey">
-      <div class="container">
-        <div class="d-flex flex-wrap justify-content-between">
-          <img src="images/brand1.png" alt="phone" class="brand-image">
-          <img src="images/brand2.png" alt="phone" class="brand-image">
-          <img src="images/brand3.png" alt="phone" class="brand-image">
-          <img src="images/brand4.png" alt="phone" class="brand-image">
-          <img src="images/brand5.png" alt="phone" class="brand-image">
-        </div>
-      </div>
-    </section>
-
-    <section id="instagram" class="padding-large">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Follow our instagram</h2>
-        </div>
-        <p>Our official Instagram account <a href="#">@ultras</a> or <a href="#">#ultras_clothing</a>
-        </p>
-        <div class="row d-flex flex-wrap justify-content-between">
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image1.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image2.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image3.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image4.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image5.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image6.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-        </div>          
-      </div>
-    </section>
-
-    <section id="shipping-information">
-      <hr>
-      <div class="container">
-        <div class="row d-flex flex-wrap align-items-center justify-content-between">
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-truck"></i>
-              <h4 class="block-title">
-                <strong>Free shipping</strong> Over $200
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-return"></i>
-              <h4 class="block-title">
-                <strong>Money back</strong> Return within 7 days
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-tags1"></i>
-              <h4 class="block-title">
-                <strong>Buy 4 get 5th</strong> 50% off
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-help_outline"></i>
-              <h4 class="block-title">
-                <strong>Any questions?</strong> experts are ready
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-    </section>
-
+<!-- 
     <footer id="footer">
       <div class="container">
         <div class="footer-menu-list">
@@ -2012,7 +1208,7 @@ body.hovering-primary-banner .AEVI {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>

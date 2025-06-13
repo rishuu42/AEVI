@@ -228,3 +228,64 @@
   });
 
 })(jQuery);
+
+
+//Carousel
+  
+  window.addEventListener('scroll', function() {
+    const logoCarousel = document.getElementById('aevi-logo-carousel');
+    const stickyLogo = document.querySelector('.logo-sticky');
+    const navBar = document.getElementById('main-nav-bar');
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > document.getElementById('main-nav-bar').offsetTop) {
+      if (logoCarousel) logoCarousel.style.opacity = '0';
+      if (stickyLogo) stickyLogo.style.display = 'block';
+      navBar.classList.add('sticky');
+    } else {
+      if (logoCarousel) logoCarousel.style.opacity = '1';
+      if (stickyLogo) stickyLogo.style.display = 'none';
+      navBar.classList.remove('sticky');
+    }
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const primaryBanner = document.querySelector(".primary-banner");
+    primaryBanner.addEventListener("mouseenter", () => {
+      document.body.classList.add("hovering-primary-banner");
+    });
+    primaryBanner.addEventListener("mouseleave", () => {
+      document.body.classList.remove("hovering-primary-banner");
+    });
+  });
+
+
+      const messages = [
+        "BEST FACE OIL OF 2024 | NOURISHING FACE OIL",
+        "VEGAN & CRUELTY FREE | SUSTAINABLY SOURCED",
+        "FREE SHIPPING OVER €50 | WORLDWIDE DELIVERY"
+      ];
+      let i = 0;
+
+      setInterval(() => {
+        const el = document.getElementById("rotating-msg");
+        el.style.opacity = 0;
+        setTimeout(() => {
+          el.textContent = messages[i = (i + 1) % messages.length];
+          el.style.opacity = 1;
+        }, 500);
+      }, 4000);
+      const headerWrap = document.getElementById('header-wrap');
+      const primaryNav = document.querySelector('.primary-nav');
+      const secondaryNav = document.querySelector('.secondary-nav');
+
+      if (primaryNav) {
+        primaryNav.addEventListener('mouseenter', () => primaryNav.classList.add('hovered'));
+        primaryNav.addEventListener('mouseleave', () => primaryNav.classList.remove('hovered'));
+      }
+
+      if (secondaryNav) {
+        secondaryNav.addEventListener('mouseenter', () => secondaryNav.classList.add('hovered'));
+        secondaryNav.addEventListener('mouseleave', () => secondaryNav.classList.remove('hovered'));
+      }
