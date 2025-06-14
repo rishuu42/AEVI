@@ -1,71 +1,10 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
 # Virtual environment
 venv/
 env/
 .venv/
-.env/
+.env
 .flaskenv
-
-# Distribution / packaging
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Flask/Migrations
-migrations/
-instance/
-
-# Pytest cache
-.pytest_cache/
-
-# Coverage reports
-htmlcov/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
 
 # IDEs/editors
 .vscode/
 .idea/
-*.sublime-workspace
-*.sublime-project
-
-# System files
-.DS_Store
-Thumbs.db
-
-# SQLite DBs (if used locally for testing)
-*.sqlite3
-
-# Logs
-*.log
-logs/
-
-# MySQL/Postgres dumps
-*.sql
-
-# Docker
-*.pid
-*.bak
-
-# VS Code Jupyter cache
-.ipynb_checkpoints/
